@@ -6,7 +6,7 @@
 
 ## Description
 
-  This app will accept a number input by the user and return a range of numbers from 0 to the input number with the following exceptions:
+  <a href="https://mattfmiller.github.io/beep-boop/">This app</a> will accept a number input by the user and return a range of numbers from 0 to the input number with the following exceptions:
 
   * _1. Numbers that contain a 0 are replaced with "Beep!"_
   * _2. Numbers that contain a 1 are replaced with "Boop!"_
