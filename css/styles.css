@@ -20,6 +20,17 @@
   box-shadow: 0 1px 1px red inset, 0 0 8px red;
 }
 
+.form-control {
+  background-color: transparent;
+  color: lightgrey;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border-color: red;
+  box-shadow: 0 1px 1px red inset, 0 0 8px red;
+}
+
 html {
   background: url("../img/bg.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -43,15 +54,4 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 30%;
-}
-
-.form-control {
-  background-color: transparent;
-  color: lightgrey;
-}
-
-.form-control:focus {
-  background-color: transparent;
-  border-color: red;
-  box-shadow: 0 1px 1px red inset, 0 0 8px red;
 }

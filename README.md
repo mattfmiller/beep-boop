@@ -6,15 +6,15 @@
 
 ## Description
 
-  <a href="https://mattfmiller.github.io/beep-boop/">This app</a> will accept a number input by the user and return a range of numbers from 0 to the input number with the following exceptions:
+<a href="https://mattfmiller.github.io/beep-boop/">This app</a> will accept a number input by the user and return a range of numbers from 0 to the input number with the following exceptions:
 
-  * _1. Numbers that contain a 0 are replaced with "Beep!"_
-  * _2. Numbers that contain a 1 are replaced with "Boop!"_
-  * _3. Numbers that are a multiple of three are replaced with "I'm sorry, Dave, I'm afraid I can't do that."_
+* _1. Numbers that contain a 0 are replaced with "Beep!"_
+* _2. Numbers that contain a 1 are replaced with "Boop!"_
+* _3. Numbers that are a multiple of three are replaced with "I'm sorry, Dave, I'm afraid I can't do that."_
 
-  Where condition _3._ trumps conditions _1._ and _2._ and condition _2._ trumps condition _1._
+Where condition _3._ trumps conditions _1._ and _2._ and condition _2._ trumps condition _1._
 
-  The app can be run as many times as the user likes with new numbers.
+The app can be run as many times as the user likes with new numbers.
 
 #### Specifications
   * _Program replaces 0 with "Beep!"_

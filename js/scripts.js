@@ -1,13 +1,10 @@
 // Business Logic
 function beepBoop(number, name, reverse) {
   var nameCapitalized = name.charAt(0).toUpperCase() + name.substr(1);
-  console.log(nameCapitalized);
-  //Creates array from 0-number
   var numbersRange = []
   for (var i = 0; i <= number; i++) {
     numbersRange.push(i);
   }
-  //creates output array
   var outputArray = []
   for (var i = 0; i < numbersRange.length; i++) {
     if (numbersRange[i] > 0 && numbersRange[i] % 3 === 0) {
