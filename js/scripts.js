@@ -11,13 +11,13 @@ function beepBoop(number, name, reverse) {
   var outputArray = []
   for (var i = 0; i < numbersRange.length; i++) {
     if (numbersRange[i] > 0 && numbersRange[i] % 3 === 0) {
-      outputArray.push("I'm sorry, " + nameCapitalized + ", I'm afraid I can't do that." + " ");
+      outputArray.push(" " + "I'm sorry, " + nameCapitalized + ", I'm afraid I can't do that.");
     } else if (numbersRange[i].toString().split("").includes("1")) {
-      outputArray.push("Boop!" + " ");
+      outputArray.push(" " + "Boop!");
     } else if (numbersRange[i].toString().split("").includes("0")) {
-      outputArray.push("Beep!" + " ");
+      outputArray.push(" " + "Beep!" );
     } else {
-      outputArray.push(numbersRange[i] + " ");
+      outputArray.push(" " + numbersRange[i]);
     }
   }
   if (reverse === "No") {
@@ -37,8 +37,12 @@ $(function () {
     var userNumber = parseInt($("#user-number").val());
     var reverse = $("#reverse").val();
     var beepBoopOutput = beepBoop(userNumber, userName, reverse);
-    $("#output p").text(beepBoopOutput);
-    $("#output").show();
+    if (userName === "") {
+      $("#name-error").fadeIn();
+    } else {
+      $("#output p").text(beepBoopOutput);
+      $("#output").show();
+    }
     event.preventDefault();
   });
 });
