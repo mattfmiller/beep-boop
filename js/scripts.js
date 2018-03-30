@@ -9,7 +9,7 @@ function beepBoop(number, name) {
   var outputArray = []
   for (var i = 0; i < numbersRange.length; i++) {
     if (numbersRange[i] > 0 && numbersRange[i] % 3 === 0) {
-      outputArray.push("I'm sorry, Dave, I'm afraid I can't do that." + " ");
+      outputArray.push("I'm sorry, " + name + ", I'm afraid I can't do that." + " ");
     } else if (numbersRange[i].toString().split("").includes("1")) {
       outputArray.push("Boop!" + " ");
     } else if (numbersRange[i].toString().split("").includes("0")) {
