@@ -1,11 +1,15 @@
 // Business Logic
 function beepBoop(number) {
-  if (number === 0) {
-    return "Beep!";
-  } else if (number === 1) {
-    return "Boop!"
-  } else if (number === 3) {
-    return "I'm sorry, Dave, I'm afraid I can't do that."
+  var numberArray = number.toString().split("");
+  console.log(numberArray);
+  for (var i = 0; i < numberArray.length; i++) {
+    if (!(numberArray[i] > 0)) {
+      return "Beep!"
+    } else if (number === 1) {
+      return "Boop!"
+    } else if (number === 3) {
+      return "I'm sorry, Dave, I'm afraid I can't do that."
+    }
   }
 }
 
