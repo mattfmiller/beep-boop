@@ -11,12 +11,37 @@ _This app will accept a number input by the user and return a range of numbers f
   * _2. Numbers that contain a 1 are replaced with "Boop!"_
   * _3. Numbers that are a multiple of three are replaced with "I'm sorry, Dave, I'm afraid I can't do that."_
 
-  Where condition 3. trumps conditions 1. and 2. and condition 2. trumps condition 1.
+  Where condition _3._ trumps conditions _1._ and _2._ and condition _2._ trumps condition _1._
 
   The app can be run as many times as the user likes with new numbers.
 
 #### Specifications
   * _Program replaces 0 with "Beep!"_
+    * _Ex Input: 0_
+    * _Ex Output: "Beep!"_
+  * _Program replaces 1 with "Boop!"_
+    * _Ex Input: 1_
+    * _Ex Output: "Boop!"_
+  * _Program replaces 3 with "I'm sorry, Dave, I'm afraid I can't do that."_
+    * _Ex Input: 3_
+    * _Ex Output: "I'm sorry, Dave, I'm afraid I can't do that."_
+  * _Program replaces all digits of numbers containing 0 with "Beep!"_
+    * _Ex Input: 20_
+    * _Ex Output: "Beep!_
+  * _Program replaces all digits of numbers containing 1 with "Boop!"_
+    * _Ex Input: 11_
+    * _Ex Output: "Boop!"_
+  * _Program replaces all multiples of 3 with "I'm sorry, Dave, I'm afraid I can't do that."_
+    * _Ex Input: 6_
+    * _Ex Output: "I'm sorry, Dave, I'm afraid I can't do that."_
+  * _Program replaces all digits of numbers containing 1 (even if they contain a 0) with "Boop!"_
+    * _Ex Input: 10_
+    * _Ex Output: "Boop!"_
+  * _Program replaces all multiples of 3 (even if they contain a 0 or 1) with "I'm sorry, Dave, I'm afraid I can't do that."_
+    * _Ex Input: 102_
+    * _Ex Output: "I'm sorry, Dave, I'm afraid I can't do that."_
+
+
 
 ## Setup/Installation Requirements
 
