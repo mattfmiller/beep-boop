@@ -40,24 +40,13 @@ img {
   width: 30%;
 }
 
-
-
-#user-name {
+.form-control {
   background-color: transparent;
   color: lightgrey;
 }
 
-#user-number {
+.form-control:focus {
   background-color: transparent;
-  color: lightgrey;
-}
-
-#user-number:focus {
-  border-color: red;
-  box-shadow: 0 1px 1px red inset, 0 0 8px red;
-}
-
-#user-name:focus {
   border-color: red;
   box-shadow: 0 1px 1px red inset, 0 0 8px red;
 }
