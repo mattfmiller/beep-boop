@@ -1,5 +1,5 @@
 // Business Logic
-function beepBoop(number) {
+function beepBoop(number, name) {
   //Creates array from 0-number
   var numbersRange = []
   for (var i = 0; i <= number; i++) {
@@ -28,8 +28,9 @@ function beepBoop(number) {
 //User Logic
 $(function () {
   $("#form").submit(function(event) {
-    var userInput = parseInt($("#user-input").val());
-    var beepBoopOutput = beepBoop(userInput);
+    var userNumber = parseInt($("#user-number").val());
+    var userName = $("#user-name").val();
+    var beepBoopOutput = beepBoop(userNumber, userName);
     $("#output p").text(beepBoopOutput);
     $("#output").show();
     event.preventDefault();
