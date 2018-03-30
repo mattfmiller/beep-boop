@@ -7,15 +7,12 @@ function beepBoop(number) {
       return "I'm sorry, Dave, I'm afraid I can't do that."
     }
   }
-  for (var i = 0; i < numberArray.length; i++) {
-    if (numberArray[i] === "1") {
-      return "Boop!"
-    }
-  }
-  for (var i = 0; i < numberArray.length; i++) {
-    if (numberArray[i] === "0") {
-      return "Beep!"
-    }
+  if (numberArray.includes("1")) {
+    return "Boop!";
+  } else if (numberArray.includes("0")) {
+    return "Beep!";
+  } else {
+    return number;
   }
 }
 
