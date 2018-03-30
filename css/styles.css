@@ -16,7 +16,10 @@
 }
 
 body {
-  background-color: black;
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
   color: red;
   font-family: courier;
 }
