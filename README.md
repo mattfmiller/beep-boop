@@ -6,7 +6,8 @@
 
 ## Description
 
-_This app will accept a number input by the user and return a range of numbers from 0 to the input number with the following exceptions:_
+  This app will accept a number input by the user and return a range of numbers from 0 to the input number with the following exceptions:
+
   * _1. Numbers that contain a 0 are replaced with "Beep!"_
   * _2. Numbers that contain a 1 are replaced with "Boop!"_
   * _3. Numbers that are a multiple of three are replaced with "I'm sorry, Dave, I'm afraid I can't do that."_
