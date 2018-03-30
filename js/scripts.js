@@ -1,25 +1,35 @@
 // Business Logic
 function beepBoop(number) {
-  var range = []
-  var numberArray = number.toString().split("");
+  //Creates array from 0-number
+  var numbersRange = []
   for (var i = 0; i <= number; i++) {
-    range.push(i);
+    numbersRange.push(i);
   }
-  console.log(range);
+  //Breaks each element in numberRange into an array of digits
+  var modifiedNumbersRange = []
+  for (var i = 0; i < numbersRange.length; i++) {
+    modifiedNumbersRange.push(numbersRange[i].toString().split(""))
+  }
+  console.log(modifiedNumbersRange);
 
-  for (var i = 0; i < numberArray.length; i++) {
-    if (number > 0 && number % 3 === 0) {
-      return "I'm sorry, Dave, I'm afraid I can't do that."
+  var outputArray = []
+  for (var i = 0; i < modifiedNumbersRange.length; i++) {
+    for (var j = 0; j < modifiedNumbersRange[i].length; j++) {
+      if (numbersRange[i] > 0 && numbersRange[i] % 3 === 0) {
+        outputArray.push("I'm sorry, Dave, I'm afraid I can't do that.");
+      }
+    }
+    if (modifiedNumbersRange[i].includes("1")) {
+      outputArray.push("Boop!");
+    } else if (modifiedNumbersRange[i].includes("0")) {
+      outputArray.push("Beep!");
+    } else {
+      outputArray.push(numbersRange[i]);
     }
   }
-  if (numberArray.includes("1")) {
-    return "Boop!";
-  } else if (numberArray.includes("0")) {
-    return "Beep!";
-  } else {
-    return number;
-  }
+  return outputArray;
 }
+
 
 
 
