@@ -41,8 +41,6 @@ _This app will accept a number input by the user and return a range of numbers f
     * _Ex Input: 102_
     * _Ex Output: "I'm sorry, Dave, I'm afraid I can't do that."_
 
-
-
 ## Setup/Installation Requirements
 
 * Clone repository from https://github.com/mattfmiller/beep-boop
