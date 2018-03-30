@@ -11,22 +11,39 @@ function beepBoop(number) {
     modifiedNumbersRange.push(numbersRange[i].toString().split(""))
   }
   console.log(modifiedNumbersRange);
-
+  //creates output array
   var outputArray = []
-  for (var i = 0; i < modifiedNumbersRange.length; i++) {
-    for (var j = 0; j < modifiedNumbersRange[i].length; j++) {
-      if (numbersRange[i] > 0 && numbersRange[i] % 3 === 0) {
-        outputArray.push("I'm sorry, Dave, I'm afraid I can't do that.");
-      }
-    }
-    if (modifiedNumbersRange[i].includes("1")) {
+  for (var i = 0; i < numbersRange.length; i++) {
+    if (numbersRange[i] > 0 && numbersRange[i] % 3 === 0) {
+      outputArray.push("I'm sorry, Dave, I'm afraid I can't do that.");
+    } else if (numbersRange[i].toString().split("").includes("1")) {
       outputArray.push("Boop!");
-    } else if (modifiedNumbersRange[i].includes("0")) {
+    } else if (numbersRange[i].toString().split("").includes("0")) {
       outputArray.push("Beep!");
     } else {
       outputArray.push(numbersRange[i]);
     }
   }
+
+
+
+
+
+
+  // for (var i = 0; i < modifiedNumbersRange.length; i++) {
+  //   for (var j = 0; j < modifiedNumbersRange[i].length; j++) {
+  //     if (numbersRange[i] > 0 && numbersRange[i] % 3 === 0) {
+  //       outputArray.push("I'm sorry, Dave, I'm afraid I can't do that.");
+  //     }
+  //   }
+  //   if (modifiedNumbersRange[i].includes("1")) {
+  //     outputArray.push("Boop!");
+  //   } else if (modifiedNumbersRange[i].includes("0")) {
+  //     outputArray.push("Beep!");
+  //   } else {
+  //     outputArray.push(numbersRange[i]);
+  //   }
+  // }
   return outputArray;
 }
 
