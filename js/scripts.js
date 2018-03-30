@@ -1,5 +1,5 @@
 // Business Logic
-function beepBoop(number, name) {
+function beepBoop(number, name, reverse) {
   var nameCapitalized = name.charAt(0).toUpperCase() + name.substr(1);
   console.log(nameCapitalized);
   //Creates array from 0-number
@@ -20,7 +20,10 @@ function beepBoop(number, name) {
       outputArray.push(numbersRange[i] + " ");
     }
   }
-  return outputArray;
+  if (reverse === "No") {
+    return outputArray;
+  } else if (reverse === "Yes")
+    return outputArray.reverse();
 }
 
 
@@ -30,9 +33,10 @@ function beepBoop(number, name) {
 //User Logic
 $(function () {
   $("#form").submit(function(event) {
-    var userNumber = parseInt($("#user-number").val());
     var userName = $("#user-name").val();
-    var beepBoopOutput = beepBoop(userNumber, userName);
+    var userNumber = parseInt($("#user-number").val());
+    var reverse = $("#reverse").val();
+    var beepBoopOutput = beepBoop(userNumber, userName, reverse);
     $("#output p").text(beepBoopOutput);
     $("#output").show();
     event.preventDefault();
