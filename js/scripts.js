@@ -1,7 +1,12 @@
 // Business Logic
 function beepBoop(number) {
+  var range = []
   var numberArray = number.toString().split("");
-  console.log(numberArray);
+  for (var i = 0; i <= number; i++) {
+    range.push(i);
+  }
+  console.log(range);
+
   for (var i = 0; i < numberArray.length; i++) {
     if (number > 0 && number % 3 === 0) {
       return "I'm sorry, Dave, I'm afraid I can't do that."

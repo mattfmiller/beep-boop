@@ -40,7 +40,7 @@ _This app will accept a number input by the user and return a range of numbers f
   * _Program replaces all multiples of 3 (even if they contain a 0 or 1) with "I'm sorry, Dave, I'm afraid I can't do that."_
     * _Ex Input: 102_
     * _Ex Output: "I'm sorry, Dave, I'm afraid I can't do that."_
-  * _Program returns a range of numbers from 0 to the users number._
+  * _Program creates a range of numbers from 0 to the users number._
     * _Ex Input: 6_
     * _Ex Output: "0, 1, 2, 3, 4, 5, 6_
   * _Program applies appropriate condition to each number in the range._
