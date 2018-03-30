@@ -2,6 +2,19 @@
   display: none;
 }
 
+.container-fluid {
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 15px;
+}
+
+.btn {
+  background: red;
+  border-color: red;
+  color: black;
+  font-family: courier;
+}
+
 body {
   background-color: black;
   color: red;
@@ -12,28 +25,6 @@ h1 {
   text-align: center;
 }
 
-.btn {
-  background: red;
-  border-color: red;
-  color: black;
-  font-family: courier;
-}
-
-/*#form-container {
-  background-color: #424242;
-  margin-top: 100px;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding: 20px;
-  border-radius: 15px;
-}*/
-
-.container-fluid {
-  padding: 20px;
-  margin: 25px 0;
-  border-radius: 15px;
-}
-
 img {
   display: block;
   margin-left: auto;
@@ -41,4 +32,22 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 30%;
+}
+
+#user-name {
+  background-color: #2E2E2E;
+  color: lightgrey;
+}
+
+#user-number {
+  background-color: #2E2E2E;
+  color: lightgrey;
+}
+
+#user-number:focus {
+  border: 1px solid red;
+}
+
+#user-name:focus {
+  border: 1px solid red;
 }
