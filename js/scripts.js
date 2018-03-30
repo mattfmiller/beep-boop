@@ -2,9 +2,11 @@
 function beepBoop(number) {
   var numberArray = number.toString().split("");
   console.log(numberArray);
-  // for (var i = 0; i < numberArray.length; i++) {
-
-  // }
+  for (var i = 0; i < numberArray.length; i++) {
+    if (number > 0 && number % 3 === 0) {
+      return "I'm sorry, Dave, I'm afraid I can't do that."
+    }
+  }
   for (var i = 0; i < numberArray.length; i++) {
     if (numberArray[i] === "1") {
       return "Boop!"
@@ -13,8 +15,6 @@ function beepBoop(number) {
   for (var i = 0; i < numberArray.length; i++) {
     if (numberArray[i] === "0") {
       return "Beep!"
-    } else if (number > 0 && number % 3 === 0) {
-      return "I'm sorry, Dave, I'm afraid I can't do that."
     }
   }
 }
